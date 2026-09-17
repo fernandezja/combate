@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../../tests/Combate.App.Tests/Combate.App.Tests.csproj" />
+  <Project Path="Combate.App.csproj" />
+</Solution>
