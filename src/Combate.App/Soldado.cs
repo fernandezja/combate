@@ -8,4 +8,9 @@ public class Soldado
     {
         return 1;
     }
+
+    public int RecibirDisparo()
+    {
+        return 1;
+    }
 }

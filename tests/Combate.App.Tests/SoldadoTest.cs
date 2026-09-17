@@ -15,6 +15,16 @@ namespace Combate.App.Tests
             Assert.Equal(expected: 1, actual: resultado);
         }
 
+        [Fact]
+        public void UnSoldadoDebeRecibirDisparo()
+        {
+
+            var soldado1 = new Soldado();
+            var resultado = soldado1.RecibirDisparo();
+
+            Assert.Equal(expected: 1, actual: resultado);
+        }
+
 
     }
 }
