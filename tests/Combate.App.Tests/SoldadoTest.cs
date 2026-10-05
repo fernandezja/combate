@@ -42,5 +42,31 @@ namespace Combate.App.Tests
         }
 
 
+
+         [Fact]
+        public void UnSoldadoConEscudoMuereDeDosDisparos()
+        {
+
+            var soldado1 = new Soldado();
+            var soldado2 = new Soldado();
+            var escudo1 = new Escudo50();
+
+            soldado2.SetEscudo(escudo1);
+
+            Assert.True(soldado2.EstaVivo());
+
+            soldado1.Disparar(soldado2);
+
+            Assert.True(soldado2.EstaVivo());
+
+            
+            soldado1.Disparar(soldado2);
+
+            
+            Assert.False(soldado2.EstaVivo());
+
+        }
+
+
     }
 }

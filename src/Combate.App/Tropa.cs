@@ -3,6 +3,16 @@ namespace Combate.App;
 public abstract class Tropa
 {
     protected int _vida;
+    protected Escudo50 _escudo;
+
+      public void SetEscudo(Escudo50 value  )
+    {
+
+
+        _escudo = value;
+
+        _escudo.SetPortado(this);
+    }
 
     protected Tropa(int vidaInicial)
     {
