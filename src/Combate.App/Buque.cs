@@ -4,5 +4,9 @@ public class Buque : Tropa
 {
     public Buque() : base(3)
     {
+
+        public void demo(){
+            
+        }
     }
 }
